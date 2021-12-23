@@ -1,0 +1,48 @@
+.grid-show {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 2fr);
+}
+
+.img-sty img {
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.img-sty img:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.countshow p {
+  border: 2px solid #000;
+  margin: 15px;
+  padding: 10px;
+}
+.countshow div {
+  width: 100px;
+  height: 60px;
+  border: 2px solid chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countshow p span {
+  color: rgb(7, 172, 29);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .img-sty img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .grid-show {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
